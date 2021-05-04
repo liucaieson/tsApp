@@ -1,0 +1,666 @@
+:root{
+  /* common */
+  --odds-opacity: 0;
+  --common-color: #333;
+  --common-border: #e0ebfe;
+  --body-bg: #e0ebfe;
+  --high-active:  #cf5650;
+  --loading-bg: #5a8cff;
+
+  --scroll-bg: #F5F5F5;
+  --scroll-track: #CADDFF;
+  --scroll-thumb: #729DFF;
+  --scroll-bg2: #F5F5F5;
+  --scroll-track2: #CADDFF;
+  --scroll-thumb2: #729DFF;
+  /* 层级颜色 */
+  --bg1: #487DF7;
+  --bg2: #729DFF;
+  --bg3: #CADDFF;
+  --bg4: #d3e3ff;
+  --bg5: #e3eeff;
+  --bg6: #f4f8ff;
+  --warn-bg1: #DE1C1C;
+
+  /*header */
+  --header-icon-color: #487DF7;
+  --header-icon-color-active: #729DFF;
+  --left-bg: #EDF2FD;
+  --top-header-bg: #fff;
+  --top-header-f-color: #333;
+  --top-header-f-color2: #705636;
+  --top-header-ann-bg1: #e3eeff;
+  --top-header-ann-bg2: #487df7;
+  --top-ann-bg1: #fff;
+  --top-ann-bg2: #CADDFF;
+  --top-ann-f1: #333;
+  --top-ann-f2: #333;
+  --top-ann-f3: #dc143c;
+  --top-ann-header: #333;
+  --top-ann-f1-active: #fff;
+  /* main区域 顶部的玩法分类栏 */
+  --main-top-bg1: #D3E3FF;
+  --main-top-bg2: #c2d8ff;
+  --main-top-border1: #fff;
+  --main-top-f-color1: #333;
+  --main-top-f-color2: #4E4E4E;
+  --main-top-border2: #fff;
+
+  /* main 顶部通用操作栏目 */
+  --main-operation-bg1: #CADDFF;
+  --main-operation-f-color1: #f9f0e5;
+  --main-operation-btn-bg: #5A8CFF;
+  --main-operation-btn-bg-hover: #487DF7;
+  --main-operation-btn-f-color: #fff;
+
+  --main-date-bg: #d2e2ff;
+  --main-date-f-color: #333;
+
+  /* main 顶部日期 */
+
+  /* main cs-tip */
+  --cs-tip-bg: #E0EBFF;
+  --cs-tip-color: #666666;
+
+  /* menu栏目 */
+  /* 通用 */
+  --menu-common-f-color: #333;
+  /*tab*/
+  --menu-tab-bg: #d7e7ff;
+  --menu-tab-bg-active: #487DF7;
+  --menu-tab-f-color: #333;
+  --menu-tab-f-color-active: #fff;
+  --menu-box-bg: #fff;
+  /*tips*/
+  --menu-tips-bg: #e0eaff;
+  /*各栏目title*/
+  --menu-title1-bg: #EDF2FD;
+  --menu-title1-f-color: #333;
+  /* 滚球区域 */
+  --menu-in-play-bg: #F9FCFF;
+  /*精选赛事区域*/
+  --menu-highlight-bg: #F9FCFF;
+  --menu-highlight-f-color1: #719CFF;
+  /* 今日早盘综合过关 */
+  --menu-sport-title-bg: #FfF;
+  --menu-sport-title-f-color: #333;
+  --menu-sport-title-bg-active: #e3eeff;
+  --menu-sport-title-f-color-active: #487DF7;
+  --menu-market-item-bg: #f1f8ff;
+  --menu-market-item-f-color: #333;
+  --menu-market-item-f-color-active: #487DF7;
+  --menu-inPlay-market-item-f-color-active: #487DF7;
+
+  /* 我的注单颜色 */
+  --myOrder-market-f: #02a7f0;
+  --myOrder-bg: #fff;
+  /* 我的注单颜色 */
+  --myOrder-title-bg: #caddff;
+
+  /* 收藏的星星 */
+  --star-active: #F9AB0E;
+  --star-bg1: #94bbff;
+
+  /* 比赛列表样式*/
+  --cpt-bg: #E3EEFF;
+  --cpt-f-color: #487DF7;
+  --match-in-play-bg: #d3e3ff;
+  --match-in-play-f-color: #333;
+  --match-time-f-color: #002780;
+  --match-home-f-color: #2B4B95;
+  --match-away-f-color: #DE1C1C;
+  --match-neutral: #2B4B95;
+  --match-bg: #fcfdff;
+  --match-even: #EEF7FF;
+  --match-hover: #d1e0fb;
+  --match-border-bottom: #e0ebfe;
+  --match-border-left: #e0ebfe;
+  --match-tv-inPlay:#487df7;
+  --match-tv-inPlay-active:#1D61B6;
+  --match-tv-no:#CCCCCC;
+  --score-color: #935120;
+  --score-color2: #935120;
+
+  /* 赔率颜色 */
+  --odds-color: #de1c1c;
+  --odds-color-active: #fff;
+  --odds-bg-active: #0042DC;
+  --specifier-color: #705636;
+  --lock-color: #666;
+  --odds-color-high: #fd0000;
+  --odds-color-low: #2ba508;
+  --odds-color-lower: #25548e;
+  --odds-color-negative1: #104b8d;
+  --odds-color-negative2: #104b8d;
+
+  /* 直播表颜色 */
+  --live-title-bg: #CBDCFA;
+  --live-list-bg: #fafbff;
+  --live-item-inlive: #487df7;
+  --live-title-f-color: #487DF7;
+  --live-title-f-color-hover: #425d9c;
+  --live-bg: #eaf2ff;
+
+  /* 购物车 */
+  --betSlip-bg1: #caddff;
+  --betSlip-title: #EDF2FD;
+  --betSlip-title-f-color: #333333;
+  --betSlip-order-bg: #fff;
+  --betSlip-item-market-color: #487DF7;
+  --betSlip-item-line-color: #000000;
+  --betSlip-item-odds-color: #FF0000;
+  --betSlip-input-box-bg: #F9FCFF;
+  --betSlip-text-color1: #555555;
+  --betSlip-text-color2: #555;
+  --betSlip-money-text: #0C3BD5;
+  --betSlip-selection: #EDF2FD;
+  --betSlip-selection-btn-bg: #487DF7;
+  --betSlip-selection-btn-color: #fff;
+  --betSlip-selection-btn-bg-active: #3D78FF;
+  --betSlip-input-border: #9ABDFC;
+  --err-bg: #f6c0c0;
+  --betSlip-no-bg: #eef7ff;
+  --betSlip-no-f: #45403b;
+  --quickly-color1: #333;
+  --quickly-color2:#f76c48;
+  --qucikly-border: #b4cdfb;
+  --quickly-border2: #bad2ff;
+  --quicky-bg: #dde9ff;
+  --quickly-odds-color: #fb4242;
+  --quickly-setting-bg: #e6f0ff;
+
+  /* 大按钮 */
+  --submit-bg: #F76C48;
+  --cancel-bg: #d8d8d8;
+  --submit-color: #fff;
+  --common-btn-f-color1: #f9f0e5;
+  --common-btn-bg: #487df7;
+  --common-btn-bg2: #94bbff;
+  --common-btn-check: #487df7;
+  --common-btn-disable: #b1b6bb;
+  --common-btn-bg-active: #729dff;
+  --all-market-btn-bg: #fff;
+  --all-market-btn-bg-active: #487DF7;
+  --all-market-btn-color: #487DF7;
+  --all-market-btn-f-active: #fff;
+
+  /* 投注单颜色 */
+  --order-bg: #F9FCFF;
+  --order-bg2: #ECF4FF;
+  --order-color1: #487DF7;
+  --order-color2: #333333;
+  --order-color3: #000000;
+  --order-btn-bg1: #5287FF;
+  --order-btn-color1: #fff;
+  --order-btn-color2: #fff;
+  --order-odds-color: #FF0000;
+  --order-border1: #BBDDFF;
+  --order-success: #3BCC41;
+  --order-failed: #EF3636;
+  --order-confirmed: #F0A000;
+  --order-my-color1: #333;
+  --order-my-color2: #333333;
+
+  /* user颜色 */
+  --user-bg1: #CADDFF;
+  --user-bg2: #e3eeff;
+  --user-bg4: #f9fcff;
+  --user-bg5: #caddff;
+  --user-bg6: #f9fcff;
+  --user-color1: #333333;
+  --user-color2: #333333;
+  --user-color3: #333;
+  --user-in-color1: #333;
+  --user-color-active1: #487DF7;
+  --user-color-active2: #fff;
+  --user-bg-active: #487DF7;
+  --user-border: #E2E6F1;
+
+  /*pop颜色 */
+  --pop-bg1: #fff;
+  --pop-bg2: #5A8CFF;
+  --pop-bg3: #edf2fd;
+  --pop-color1: #fff;
+  --pop-color2: #333;
+  --pop-color3: #487df7;
+  --pop-color-active: #fff;
+
+  /**/
+  /* detail颜色 */
+  --detail-bg1: #e9f2ff;
+  --detail-bg2: #E3EEFF;
+  --detail-color1: #333333;
+  --detail-color2: #487DF7;
+  --detail-color3: #424242;
+  --detail-market-bg:#cbdcfa;
+  --detail-hot-bg: #caddff;
+  --detail-my-bg: #caddff;
+  --detail-border: #E2E6F1;
+  --detail-border2: #AECEFF;
+
+  --detail-line-bg: #fff;
+  --detail-line-bg-active: #EEF7FF;
+}
+:root[theme='2'] {
+  --odds-opacity: .6;
+  /* common */
+  --common-color: #fff;
+  --common-border: #313c49;
+  --body-bg: #0e3360;
+  --high-active: #00E6FF;
+  --loading-bg: #fff;
+
+  --warn-bg1: #DE1C1C;
+  /* 滚动条 */
+  --scroll-bg: #F5F5F5;
+  --scroll-track: #555;
+  --scroll-thumb: #F5F5F5;
+  --scroll-bg2: #F5F5F5;
+  --scroll-track2: #05162b;
+  --scroll-thumb2: #aaa;
+  /*header */
+  --header-icon-color: #fff;
+  --header-icon-color-active: #d5e0ff;
+  --left-bg: #0e3360;
+  --top-header-bg: #081D37;
+  --top-header-f-color: #fff;
+  --top-header-f-color2: #fff;
+  --top-header-ann-bg1: #e3eeff;
+  --top-header-ann-bg2: #0f56ae;
+  --top-ann-bg1: #072344;
+  --top-ann-bg2: #105EB5;
+  --top-ann-f1: #fff;
+  --top-ann-f2: #0f56ae;
+  --top-ann-f3: #fff;
+  --top-ann-header: #fff;
+  --top-ann-f1-active: #fff;
+  /* main区域 顶部的玩法分类栏 */
+  --main-top-bg1: #0F2D51;
+  --main-top-bg2: #081D37;
+  --main-top-border1: #05203B;
+  --main-top-f-color1: #fff;
+  --main-top-f-color2: #00E6FF;
+  --main-top-border2: #0f2d51;
+
+  /* main 顶部通用操作栏目 */
+  --main-operation-bg1: #081D37;
+  --main-operation-f-color1: #fff;
+  --main-operation-btn-bg: #16375C;
+  --main-operation-btn-bg-hover: #105eb5;
+  --main-operation-btn-f-color: #fff;
+
+  /* main 顶部日期 */
+  --main-date-bg: #0d213a;
+  --main-date-f-color: #fff;
+  /* main cs-tip */
+  --cs-tip-bg:#1D5690;
+  --cs-tip-color: #fff;
+
+  /* menu栏目 */
+  /* 通用 */
+  --menu-common-f-color: #fff;
+  /*tab*/
+  --menu-tab-bg: #0E3360;
+  --menu-tab-bg-active: #0F56AE;
+  --menu-tab-f-color: #A6B6B2;
+  --menu-tab-f-color-active: #fff;
+  --menu-box-bg: #0E3360;
+  /*tips*/
+  --menu-tips-bg: #081D37;
+  /*各栏目title*/
+  --menu-title1-bg: #0E3965;
+  --menu-title1-f-color: #fff;
+  /* 滚球区域 */
+  --menu-in-play-bg: #05172C;
+  /*精选赛事区域*/
+  --menu-highlight-bg: #081D37;
+  --menu-highlight-f-color1: #fff;
+  /* 今日早盘综合过关 */
+  --menu-sport-title-bg:#081D37;
+  /*精选赛事区域*/
+  /* 今日早盘综合过关 */
+  --menu-sport-title-f-color: #fff;
+  --menu-sport-title-bg-active: #154683;
+  --menu-sport-title-f-color-active: #fff;
+  --menu-market-item-bg: #05172C;
+  --menu-market-item-f-color: #fff;
+  --menu-market-item-f-color-active: #FF8800;
+  --menu-inPlay-market-item-f-color-active: #FF8800;
+  /* 我的注单颜色 */
+  --myOrder-market-f: #104b8d;
+  --myOrder-bg: #f5faff;
+  --myOrder-title-bg: #05162B;
+
+  /* 收藏的星星 */
+  --star-active: #F9AB0E;
+  --star-bg1: #94bbff;
+
+  /* 比赛列表样式*/
+  --cpt-bg: #144480;
+  --cpt-f-color: #fff;
+  --match-hover: #2B2C34;
+  --match-in-play-bg: #0B2546;
+  --match-in-play-f-color: #fff;
+  --match-time-f-color: #fff;
+  --match-home-f-color: #fff;
+  --match-away-f-color: #FF8800;
+  --match-neutral: #00e6ff;
+  --match-bg: #232323;
+  --match-body-bg: #2B2C34;
+  --match-even: #2B2C34;
+  --match-border-bottom: #313c49;
+  --match-border-left: #313c49;
+  --match-time-play-flag: #FF4100;
+  --match-tv-inPlay:#154683;
+  --match-tv-inPlay-active:#1D61B6;
+  --match-tv-no:#CCCCCC;
+  --score-color: #FF4100;
+  --score-color2: #fff;
+  /* 赔率颜色 */
+  --odds-color: #FF8800;
+  --odds-color-active: #fff;
+  --odds-bg-active: #FF8800;
+  --specifier-color: #fff;
+  --lock-color: #D4D4D4;
+  --odds-color-high: #F14242;
+  --odds-color-low: #1CB37B;
+  --odds-color-lower: #8bb7ef;
+  --odds-color-negative1: #104b8d;
+  --odds-color-negative2: #00FFFF;
+  /* 直播表颜色 */
+  --live-title-bg: #092950;
+  --live-title-f-color: #fff;
+  --live-title-f-color-hover: #f4a621;
+  --live-bg: #182f49;
+  --live-list-bg: #05172c;
+  --live-item-inlive: #fff;
+  --live-item-nolive: #6D6D6D;
+
+  /* 购物车 */
+  --betSlip-bg1: #05162B;
+  --betSlip-order-bg: #e9f3ff;
+  --betSlip-title: #05162B;
+  --betSlip-title-f-color: #fff;
+  --betSlip-item-market-color: #104B8D;
+  --betSlip-item-line-color: #000000;
+  --betSlip-item-odds-color: #FF0000;
+  --betSlip-input-box-bg: #05162B;
+  --betSlip-text-color1: #555555;
+  --betSlip-text-color2: #fff;
+  --betSlip-money-text: #00FF0A;
+  --betSlip-selection: #05162B;
+  --betSlip-selection-btn-bg: #104B8D;
+  --betSlip-selection-btn-color: #fff;
+  --betSlip-selection-btn-bg-active: #105eb5;
+  --betSlip-input-border: #104B8D;
+  --err-bg: #f6c0c0;
+  --betSlip-no-bg: #104B8D;
+  --betSlip-no-f: #fff;
+  --quickly-color1:#fff;
+  --quickly-color2:#ff9d30;
+  --qucikly-border: #2268b7;
+  --quicky-bg: #104B8D;
+  --quickly-odds-color: #fb4242;
+  --quickly-border2: #1a67bd;
+  --quickly-setting-bg: #05162B;
+  /* 大按钮 */
+  --submit-bg: #FF8800;
+  --cancel-bg: #CCCCCC;
+  --submit-color: #fff;
+  --common-btn-bg: #16375c;
+  --common-btn-bg2: #34577e;
+  --common-btn-disable: #b1b6bb;
+  --common-btn-check: #105eb5;
+  --common-btn-bg-active: #105eb5;
+  --all-market-btn-bg: #fff;
+  --all-market-btn-bg-active: #fff;
+  --all-market-btn-f-active: #232323;
+  --all-market-btn-color: #fff;
+
+  /* 投注单颜色 */
+  --order-bg: #F9FCFF;
+  --order-bg2: #ECF4FF;
+  --order-color1: #104B8D;
+  --order-color2: #333333;
+  --order-color3: #000000;
+  --order-btn-bg1: #5287FF;
+  --order-btn-color1: #fff;
+  --order-btn-color2: #fff;
+  --order-odds-color: #FF0000;
+  --order-border1: #E1E1E2;
+  --order-success: #3BCC41;
+  --order-failed: #EF3636;
+  --order-confirmed: #F0A000;
+  --order-my-color1: #fff;
+  --order-my-color2: #333333;
+
+  /* user颜色 */
+  --user-bg1: #182f49;
+  --user-bg2: #14467E;
+  --user-bg4: #f9fcff;
+  --user-bg5: #999;
+  --user-bg6: #fff;
+  --user-title-color: #fff;
+  --user-color1: #fff;
+  --user-color2: #fff;
+  --user-color3: #333;
+  --user-in-color1: #fff;
+  --user-color-active1: #FF8800;
+  --user-color-active2: #fff;
+  --user-bg-active: #487DF7;
+  --user-border: #E2E6F1;
+
+  /*pop颜色 */
+  --pop-bg1: #fff;
+  --pop-bg2: #0e3965;
+  --pop-bg-active: #105EB5;
+  --pop-bg3: #edf2fd;
+  --pop-color1: #fff;
+  --pop-color2: #333;
+  --pop-color3: #487df7;
+  --pop-color-active: #fff;
+
+  /* detail颜色 */
+  --detail-bg1: #232323;
+  --detail-bg2: #0e3965;
+  --detail-color1: #fff;
+  --detail-color2: #fff;
+  --detail-color3: #fff;
+  --detail-market-bg:#0f2d51;
+  --detail-hot-bg:#0f2d51;
+
+  --detail-border: #313c49;
+  --detail-border2: #313c49;
+
+  --detail-line-bg: #232323;
+  --detail-f-color: #fff;
+  --detail-line-bg-active: #4f4f4f;
+  --detail-my-bg: #232323;
+  --detail-my-f-color: #fff;
+}
+/*:root {
+  !* common *!
+  --common-color: #333;
+  --common-border: #e0ebfe;
+  --body-bg: #F2E8D6;
+
+  --warn-bg1: #DE1C1C;
+
+  !*header *!
+  --header-icon-color:   #A27140;
+  --header-icon-color-active: #f9f29c;
+  --left-bg: #EDF2FD;
+  --top-header-bg: #E2DBCE;
+  --top-header-f-color: #333333;
+  --top-header-f-color2: #333333;
+  --top-header-ann-bg1: #fff;
+  --top-header-ann-bg2: #b07e55;
+  !* main区域 顶部的玩法分类栏 *!
+  --main-top-bg1: #825C3C;
+  --main-top-bg2: #a5744a;
+  --main-top-border1: #fff;
+  --main-top-f-color1: #fff;
+  --main-top-f-color2: #fff;
+
+  !* main 顶部通用操作栏目 *!
+  --main-operation-bg1: #674222;
+  --main-operation-f-color1: #fff;
+  --main-operation-btn-bg: #B8824C;
+  --main-operation-btn-bg-hover: #D2905B;
+  --main-operation-btn-f-color: #fff;
+
+  !* main 顶部日期 *!
+  --main-date-bg: #674222;
+  --main-date-f-color: #fff;
+  !* main cs-tip *!
+  --cs-tip-bg:#D2905B;
+  --cs-tip-color: #fff;
+
+  !* menu栏目 *!
+  !* 通用 *!
+  --menu-common-f-color: #201207;
+  !*tab*!
+  --menu-tab-bg: #674222;
+  --menu-tab-bg-active: #985E2C;
+  --menu-tab-f-color: #e6e6e6;
+  --menu-tab-f-color-active: #fff;
+  --menu-box-bg: #856951;
+  !*tips*!
+  --menu-tips-bg: #825C3C;
+  !*各栏目title*!
+  --menu-title1-bg: #825C3C;
+  --menu-title1-f-color: #fff;
+  !* 滚球区域 *!
+  --menu-in-play-bg: #F2E8D6;
+  !*精选赛事区域*!
+  --menu-highlight-bg: #F2E8D6;
+  --menu-highlight-f-color1: #333;
+  !* 今日早盘综合过关 *!
+  --menu-sport-title-bg:#856951;
+  !*精选赛事区域*!
+  !* 今日早盘综合过关 *!
+  --menu-sport-title-f-color: #fff;
+  --menu-sport-title-bg-active: #B07E55;
+  --menu-sport-title-f-color-active: #fff;
+  --menu-market-item-bg: #F2E8D6;
+  --menu-market-item-f-color: #201207;
+  --menu-market-item-f-color-active: #FF4100;
+  --menu-inPlay-market-item-f-color-active: #FF4100;
+
+  !* 收藏的星星 *!
+  --star-active: #F9AB0E;
+  --star-bg1: #f2e8d6;
+
+  !* 比赛列表样式*!
+  --cpt-bg: #B07E55;
+  --cpt-f-color: #fff;
+  --match-time-f-color: #666666;
+  --match-home-f-color: #2B4B95;
+  --match-away-f-color: #DE1C1C;
+  --match-bg: #fffcf6;
+  --match-even: #fff8e9;
+  --match-border-bottom: #e0ebfe;
+  --match-time-play-flag: #89521a;
+
+  !* 赔率颜色 *!
+  --odds-color: #FF4100;
+  --odds-color-active: #fff;
+  --odds-bg-active: #FF4100;
+  --specifier-color: #666666;
+  --lock-color: #666;
+  --odds-color-high: #fd0000;
+  --odds-color-low: #2ba508;
+
+  !* 直播表颜色 *!
+  --live-title-bg: #674222;
+  --live-title-f-color: #fff;
+  --live-bg: #856951;
+  --live-list-bg: #f6f1e9;
+  --live-item-inlive: #333;
+  --live-item-nolive: #6D6D6D;
+
+  !* 购物车 *!
+  --betSlip-bg1: #05162B;
+  --betSlip-title: #05162B;
+  --betSlip-title-f-color: #fff;
+  --betSlip-item-market-color: #104B8D;
+  --betSlip-item-line-color: #000000;
+  --betSlip-item-odds-color: #FF0000;
+  --betSlip-input-box-bg: #05162B;
+  --betSlip-text-color1: #555555;
+  --betSlip-text-color2: #fff;
+  --betSlip-money-text: #00FF0A;
+  --betSlip-selection: #05162B;
+  --betSlip-selection-btn-bg: #104B8D;
+  --betSlip-selection-btn-color: #fff;
+  --betSlip-selection-btn-bg-active: #396ba3;
+  --betSlip-input-border: #104B8D;
+  --err-bg: #f6c0c0;
+
+  !* 大按钮 *!
+  --submit-bg: #FF8800;
+  --cancel-bg: #CCCCCC;
+  --submit-color: #fff;
+  --common-btn-bg:  #B8824C;
+  --common-btn-bg2: #674222;
+  --common-btn-disable: #b1b6bb;
+  --common-btn-check: #985e2c;
+  --common-btn-bg-active: #D2905B;
+  --all-market-btn-bg: #fff;
+  --all-market-btn-bg-active: #b07e55;
+  --all-market-btn-f-active: #fff;
+  --all-market-btn-color: #333;
+
+  !* 投注单颜色 *!
+  --order-bg: #F9FCFF;
+  --order-bg2: #ECF4FF;
+  --order-color1: #104B8D;
+  --order-color2: #333333;
+  --order-color3: #000000;
+  --order-btn-bg1: #5287FF;
+  --order-btn-color1: #fff;
+  --order-btn-color2: #fff;
+  --order-odds-color: #FF0000;
+  --order-border1: #BBDDFF;
+  --order-success: #3BCC41;
+  --order-failed: #EF3636;
+  --order-confirmed: #F0A000;
+  --order-my-color1: #fff;
+  --order-my-color2: #333333;
+
+  !* user颜色 *!
+  --user-bg1: #825c3c;
+  --user-bg2: #f2e8d6;
+  --user-bg4: #f9fcff;
+  --user-color1: #fff;
+  --user-color2: #fff;
+  --user-in-color1: #333;
+  --user-color-active1: #FF8800;
+  --user-color-active2: #fff;
+  --user-bg-active: #825c3c;
+  --user-border: #E2E6F1;
+
+  !*pop颜色 *!
+  --pop-bg1: #fff;
+  --pop-bg2: #A27140;
+  --pop-bg3: #edf2fd;
+  --pop-color1: #fff;
+  --pop-color2: #333;
+  --pop-color3: #825c3c;
+  --pop-color-active: #fff;
+
+  !* detail颜色 *!
+  --detail-bg1: #674222;
+  --detail-bg2: #825c3c;
+  --detail-color1: #fff;
+  --detail-color2: #fff;
+  --detail-color3: #fff;
+  --detail-market-bg:#825c3c;
+  --detail-hot-bg:#f2e8d6;
+
+  --detail-border: #E2E6F1;
+  --detail-border2: #AECEFF;
+
+  --detail-line-bg: #fff;
+  --detail-line-bg-active: #EEF7FF;
+}*/

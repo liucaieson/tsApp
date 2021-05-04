@@ -1,0 +1,53 @@
+.clearFix{
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.scrollBar{
+  overflow: -moz-scrollbars-none;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: var(--scroll-bg);
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--scroll-track);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--scroll-thumb);
+  }
+}
+
+.scrollBar2 {
+  overflow: -moz-scrollbars-none;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: var(--scroll-bg2);
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--scroll-track2);
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--scroll-thumb2);
+  }
+}
+
+.textOverflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}

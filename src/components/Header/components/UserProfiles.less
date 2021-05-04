@@ -1,0 +1,79 @@
+@import "../../../css/utils";
+
+.user {
+  float: left;
+  width: 210px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-top: 4px;
+  position: relative;
+  height: 40px;
+  .user-info{
+    padding-left: 10px;
+    line-height: 16px;
+    position: relative;
+    height: 40px;
+    flex: 1;
+    .name{
+      width: 100%;
+      font-size: 14px;
+      text-transform: uppercase;
+      transition: all .3s ease-in-out;
+      position: absolute;
+      top: 2px;
+      white-space: nowrap;
+      .textOverflow();
+      &.nameIn {
+        transform: translateY(10px);
+        font-size: 16px;
+      }
+    }
+    .balance {
+      width: 160px;
+      position: absolute;
+      top: 20px;
+      text-transform: uppercase;
+    }
+    .currency {
+      margin-right: 6px;
+    }
+    .refresh {
+      position: relative;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+  .user-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer color var(--header-icon-color);
+    font-size: 30px;
+    &:hover {
+      color: var(--header-icon-color-active);
+    }
+  }
+  .select-list {
+    width: 100px;
+    position: absolute;
+    background-color: var(--pop-bg2);
+    z-index: 10;
+    top: 40px;
+    left: 0;
+    padding: 1px;
+    .item{
+      display: block;
+      margin-bottom: 1px;
+      line-height: 30px;
+      font-size: 12px;
+      padding-left: 4px;
+      cursor: pointer;
+      color: white;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
