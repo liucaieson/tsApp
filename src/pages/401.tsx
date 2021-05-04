@@ -6,7 +6,7 @@ export default function Page401() {
       <div className={styles.noBox}>
         <div className={styles.noAuthPageIcon} />
         <div className={styles.textH2}>
-          您的认证已经过期，请从平台重新登录
+          认证已经过期，请从平台重新登录
         </div>
       </div>
     </div>
